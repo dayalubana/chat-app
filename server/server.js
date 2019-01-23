@@ -50,7 +50,7 @@ io.on('connection',(socket)=>{
 
     socket.broadcast.to(param.room).emit('newMessage',generateMessage('Admin',param.name+' has joined'))
 
-    socket.emit('newMessage',generateMessage('Admin','Welcome to Chat App'))
+    socket.emit('newMessage',generateMessage('Admin','Welcome   to Chat App'))
 
     callback()
   })
